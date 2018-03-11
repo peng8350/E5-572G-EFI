@@ -106,8 +106,8 @@
 		</dict>
 		<key>Hide</key>
 		<array>
-			<string>BOOTX64.EFI</string>
 			<string>Windows</string>
+			<string>BOOTX64.EFI</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
@@ -174,86 +174,16 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
+				<string>496E7465726E616C</string>
 				<key>Find</key>
 				<data>
-				AEFQUExFIFNTRAA=
+				RXh0ZXJuYWw=
 				</data>
 				<key>Name</key>
-				<string>disabled:IOAHCIBlockStorage</string>
+				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IGPU VRam Fix</string>
-				<key>Find</key>
-				<data>
-				AAAAAgAAMAEAAJAAAAAAYA==
-				</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AAAAAgAAMAEAAJAAAAAAgA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0204(12), 0x0a260005 0x0a260006</string>
-				<key>Find</key>
-				<data>
-				AgQJAAAEAACHAAAA
-				</data>
-				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AgQSAAAIAACHAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0105(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAAAHAQAA
-				</data>
-				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AQUSAAAIAAAHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable 9MB cursor bytes, 0x0a260006</string>
-				<key>Find</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAYAA=
-				</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAkAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable 128MB DVMT-prealloc, 0x0a2e0008</string>
-				<key>Find</key>
-				<data>
-				CAAuCgEDAwMAAAAE
-				</data>
-				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				CAAuCgEDAwMAAAAI
+				SW50ZXJuYWw=
 				</data>
 			</dict>
 			<dict>
@@ -272,58 +202,30 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>second stage patch</string>
+				<string>Enable internal display after sleep for 0x0a2e000a, 0x0a26000a</string>
 				<key>Find</key>
 				<data>
-				AQAAdRc=
+				AQAAAEAAAADWAAAABQUAAA==
 				</data>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>disabled:AppleIntelFrameBufferAzul</string>
 				<key>Replace</key>
 				<data>
-				AQAAdBc=
+				AQAAAEAAAAAeAAAABQUAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x0a260005 0x0a260006</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Find</key>
 				<data>
-				AgQJAAAEAACHAAAA
+				AEFQUExFIFNTRAA=
 				</data>
 				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
+				<string>disabled:IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				AgQJAAAIAACHAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
-				<key>Find</key>
-				<data>
-				AgQJAAAEAAAHAQAA
-				</data>
-				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AgQJAAAIAAAHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HandOff-HotsPot</string>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 			<dict>
@@ -342,16 +244,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0204(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<string>HandOff-HotsPot</string>
 				<key>Find</key>
 				<data>
-				AgQJAAAEAAAHAQAA
+				SIX/dEdIiwc=
 				</data>
 				<key>Name</key>
-				<string>disabled:AppleIntelFramebufferAzul</string>
+				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
 				<data>
-				AgQSAAAIAAAHAQAA
+				Qb4PAAAA60Q=
 				</data>
 			</dict>
 			<dict>
@@ -370,16 +272,30 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>496E7465726E616C</string>
+				<string>HDMI-audio, port 0204(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
 				<key>Find</key>
 				<data>
-				RXh0ZXJuYWw=
+				AgQJAAAEAAAHAQAA
 				</data>
 				<key>Name</key>
-				<string>AppleAHCIPort</string>
+				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				SW50ZXJuYWw=
+				AgQSAAAIAAAHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0105(12), 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAACHAAAA
+				</data>
+				<key>Name</key>
+				<string>disabled:AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AQUSAAAIAACHAAAA
 				</data>
 			</dict>
 			<dict>
@@ -398,30 +314,126 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable internal display after sleep for 0x0a2e000a, 0x0a26000a</string>
+				<string>HDMI-audio, port 0204(12), 0x0a260005 0x0a260006</string>
 				<key>Find</key>
 				<data>
-				AQAAAEAAAADWAAAABQUAAA==
-				</data>
-				<key>Name</key>
-				<string>disabled:AppleIntelFrameBufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AQAAAEAAAAAeAAAABQUAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0105(12), 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAAAA
+				AgQJAAAEAACHAAAA
 				</data>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				AQUSAAAIAACHAAAA
+				AgQSAAAIAACHAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>second stage patch</string>
+				<key>Find</key>
+				<data>
+				AQAAdRc=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				AQAAdBc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0105(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAAAHAQAA
+				</data>
+				<key>Name</key>
+				<string>disabled:AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AQUSAAAIAAAHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable 128MB DVMT-prealloc, 0x0a2e0008</string>
+				<key>Find</key>
+				<data>
+				CAAuCgEDAwMAAAAE
+				</data>
+				<key>Name</key>
+				<string>disabled:AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				CAAuCgEDAwMAAAAI
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable 9MB cursor bytes, 0x0a260006</string>
+				<key>Find</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAYAA=
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAkAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0204, 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Find</key>
+				<data>
+				AgQJAAAEAAAHAQAA
+				</data>
+				<key>Name</key>
+				<string>disabled:AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AgQJAAAIAAAHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				AgQJAAAEAACHAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				/wAJAAAIAACHAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0204, 0x0a260005 0x0a260006</string>
+				<key>Find</key>
+				<data>
+				AgQJAAAEAACHAAAA
+				</data>
+				<key>Name</key>
+				<string>disabled:AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AgQJAAAIAACHAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IGPU VRam Fix</string>
+				<key>Find</key>
+				<data>
+				AAAAAgAAMAEAAJAAAAAAYA==
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AAAAAgAAMAEAAJAAAAAAgA==
 				</data>
 			</dict>
 		</array>
