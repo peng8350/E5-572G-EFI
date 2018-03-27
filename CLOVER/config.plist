@@ -12,9 +12,7 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixRegions_10000000</key>
-				<true/>
-				<key>NewWay_80000000</key>
+				<key>FixRegions</key>
 				<true/>
 			</dict>
 			<key>ReuseFFFF</key>
@@ -32,7 +30,18 @@
 			<key>DropOem</key>
 			<true/>
 			<key>Generate</key>
-			<false/>
+			<dict>
+				<key>APLF</key>
+				<true/>
+				<key>APSN</key>
+				<true/>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+				<key>PluginType</key>
+				<true/>
+			</dict>
 			<key>PluginType</key>
 			<string>1</string>
 		</dict>
@@ -152,9 +161,9 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
+		<key>AppleIntelCPUPM</key>
 		<true/>
-		<key>AsusAICPUPM</key>
+		<key>AppleRTC</key>
 		<true/>
 		<key>Debug</key>
 		<false/>
@@ -164,21 +173,25 @@
 		</array>
 		<key>KernelCpu</key>
 		<true/>
-		<key>KernelHaswellE</key>
-		<true/>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
+		<true/>
+		<key>KernelXCPM</key>
 		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
 				<string>496E7465726E616C</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -189,10 +202,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105, 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAAAHAQAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -203,10 +220,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable internal display after sleep for 0x0a2e000a, 0x0a26000a</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQAAAEAAAADWAAAABQUAAA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFrameBufferAzul</string>
 				<key>Replace</key>
@@ -217,10 +238,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:IOAHCIBlockStorage</string>
 				<key>Replace</key>
@@ -231,10 +256,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.10.2/10.10.3</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				QYjE6xE=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:IOGraphicsFamily</string>
 				<key>Replace</key>
@@ -245,10 +274,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HandOff-HotsPot</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				SIX/dEdIiwc=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
@@ -259,10 +292,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable 96MB DVMT-prealloc, 0x0a2e0008</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				CAAuCgEDAwMAAAAE
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -273,10 +310,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0204(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAAAHAQAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -287,10 +328,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105(12), 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -301,10 +346,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105, 0x0a260005 0x0a260006, 0x0d220003, 0x0a2e000a, 0x0a26000a</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -315,10 +364,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0204(12), 0x0a260005 0x0a260006</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -329,10 +382,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>second stage patch</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQAAdRc=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
@@ -343,10 +400,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105(12), 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAAAHAQAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -357,10 +418,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable 128MB DVMT-prealloc, 0x0a2e0008</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				CAAuCgEDAwMAAAAE
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -371,10 +436,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable 9MB cursor bytes, 0x0a260006</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				BgAmCgEDAwMAAAACAAAwAQAAYAA=
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -385,10 +454,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0204, 0x0a2e0008, 0x0a16000c, 0x0a2e000d, 0x0a26000d</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAAAHAQAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -397,10 +470,14 @@
 				</data>
 			</dict>
 			<dict>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -411,10 +488,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>HDMI-audio, port 0204, 0x0a260005 0x0a260006</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQJAAAEAACHAAAA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>disabled:AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -425,10 +506,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>IGPU VRam Fix</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				AAAAAgAAMAEAAJAAAAAAYA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
@@ -446,35 +531,45 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>10/29/13</string>
+		<string>02/03/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP111.88Z.0138.B03.1310291227</string>
+		<string>IM131.88Z.0114.B00.1802030048</string>
 		<key>Board-ID</key>
-		<string>Mac-189A3D4F975D5FFC</string>
+		<string>Mac-FC02E91DDD3FA6A4</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02335700J9F5031F</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>08</string>
+		<string>0x0D</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>iMac</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE00DE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
-		<true/>
-		<key>ProductName</key>
-		<string>MacBookPro11,1</string>
-		<key>SerialNumber</key>
-		<string>C02L34Q7FGYY</string>
-		<key>Trust</key>
 		<false/>
+		<key>PlatformFeature</key>
+		<string>0x01</string>
+		<key>ProductName</key>
+		<string>iMac13,2</string>
+		<key>SerialNumber</key>
+		<string>C02L93UODNCW</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
